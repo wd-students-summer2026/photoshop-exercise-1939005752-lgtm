@@ -1,4 +1,4 @@
-# Raster Image Assignment
+# Raster Image Exercise
 
 Welcome! In this assignment, you will use [Photoshop](https://www.adobe.com/products/photoshop.html) or [GIMP](https://www.gimp.org/) to create a picture of yourself placed into an unlikely, unique or impossible location.
 
