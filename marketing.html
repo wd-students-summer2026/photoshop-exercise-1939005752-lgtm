@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs"></script>
+  <link rel="stylesheet" href="css/custom.css">
+  <title>Digital Marketing | Ziqing Zhong</title>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+    <nav x-data="{ open: false }" class="sticky top-0 z-50 border-b border-purple-100 bg-white/90 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+        <div class="flex items-center gap-3">
+          <a href="index.html" class="rounded-2xl border border-purple-200 bg-white px-4 py-2 text-sm font-bold text-[#57068c] transition hover:bg-purple-50">
+            ← Main Site
+          </a>
+          <a href="professional_site.html" class="brand-gradient rounded-2xl px-4 py-2 text-lg font-bold text-white soft-shadow">
+            Ziqing Zhong
+          </a>
+        </div>
+
+        <button
+          type="button"
+          class="md:hidden rounded-xl border border-purple-200 px-3 py-2 text-[#57068c]"
+          @click="open = !open"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+
+        <div
+          x-cloak
+          class="absolute left-4 right-4 top-20 rounded-2xl border border-purple-100 bg-white p-4 shadow-xl md:static md:flex md:items-center md:gap-2 md:border-0 md:bg-transparent md:p-0 md:shadow-none"
+          :class="open ? 'block' : 'hidden'"
+        >
+          <a class="block rounded-full px-4 py-2 text-sm font-semibold transition text-gray-700 hover:text-[#57068c] hover:bg-purple-50" href="professional_site.html">Overview</a>
+          <a class="block rounded-full px-4 py-2 text-sm font-semibold transition text-[#57068c] bg-purple-50" href="marketing.html">Marketing</a>
+          <a class="block rounded-full px-4 py-2 text-sm font-semibold transition text-gray-700 hover:text-[#57068c] hover:bg-purple-50" href="sports_business.html">Sports Business</a>
+        </div>
+      </div>
+    </nav>
+
+
+  <main class="mx-auto max-w-6xl px-4">
+    <section class="mt-10 rounded-[32px] bg-white p-8 soft-shadow md:p-12">
+      <p class="text-sm font-bold uppercase tracking-[0.28em] text-[#57068c]">Digital Marketing & Analytics</p>
+      <h1 class="mt-4 text-4xl font-black tracking-tight sm:text-5xl">Campaign operations, e-commerce analysis, and data-backed storytelling.</h1>
+      <p class="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
+        My internship experience helped me understand how brand teams connect audience data, digital platforms, and campaign execution.
+      </p>
+    </section>
+    <section class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+      <article class="rounded-[28px] border border-purple-100 bg-white p-7">
+        <h2 class="text-2xl font-black">Global Digital Support</h2>
+        <p class="mt-4 text-slate-600">At Gucci Beauty Global, I supported digital marketing, e-commerce operations, brand messaging alignment, CRM work, and internal presentation materials.</p>
+      </article>
+      <article class="rounded-[28px] border border-purple-100 bg-white p-7">
+        <h2 class="text-2xl font-black">Campaign Operations</h2>
+        <p class="mt-4 text-slate-600">At Meituan, I worked on campaign execution, KPI tracking, store-level order verification, short-link deployment, and results collection.</p>
+      </article>
+    </section>
+    <section class="mt-10 rounded-[28px] bg-[#57068c] p-8 text-white md:p-10">
+      <h2 class="text-3xl font-black">What I Bring to Digital Teams</h2>
+      <div class="mt-8 grid grid-cols-1 gap-5 md:grid-cols-3">
+        <div class="rounded-2xl bg-white/10 p-5"><h3 class="font-bold">Data Organization</h3><p class="mt-2 text-purple-100">Cleaning, matching, and structuring campaign and e-commerce datasets.</p></div>
+        <div class="rounded-2xl bg-white/10 p-5"><h3 class="font-bold">Performance Thinking</h3><p class="mt-2 text-purple-100">Connecting KPIs, user actions, channel metrics, and reporting outputs.</p></div>
+        <div class="rounded-2xl bg-white/10 p-5"><h3 class="font-bold">Cross-functional Support</h3><p class="mt-2 text-purple-100">Working with marketing, BD, CRM, and project teams to support execution.</p></div>
+      </div>
+    </section>
+    <section class="mt-10 rounded-[28px] bg-white p-7 shadow-sm">
+      <h2 class="text-2xl font-black">Representative Skills</h2>
+      <div class="mt-5 grid grid-cols-2 gap-3 text-sm font-semibold text-slate-700 sm:grid-cols-3 lg:grid-cols-6">
+        <span class="rounded-full bg-purple-50 px-4 py-3 text-center">Excel</span><span class="rounded-full bg-purple-50 px-4 py-3 text-center">SQL</span><span class="rounded-full bg-purple-50 px-4 py-3 text-center">Power BI</span><span class="rounded-full bg-purple-50 px-4 py-3 text-center">CRM</span><span class="rounded-full bg-purple-50 px-4 py-3 text-center">E-commerce</span><span class="rounded-full bg-purple-50 px-4 py-3 text-center">Reporting</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-16 border-t border-purple-100 bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-slate-500">
+      <p class="font-semibold text-slate-700">Ziqing Zhong · Economics, Digital Marketing & Sports Business</p>
+      <p class="mt-2">Built with Tailwind CSS and Alpine.js for Introduction to Web Design.</p>
+    </div>
+  </footer>
+</body>
+</html>

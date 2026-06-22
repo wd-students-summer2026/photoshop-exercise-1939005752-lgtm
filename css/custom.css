@@ -1,0 +1,19 @@
+/* Custom CSS for the Professional Site assignment */
+.brand-gradient {
+  background: linear-gradient(135deg, #111827 0%, #57068c 52%, #7c3aed 100%);
+}
+
+.soft-shadow {
+  box-shadow: 0 24px 70px rgba(87, 6, 140, 0.18);
+}
+
+.section-divider {
+  width: 86px;
+  height: 5px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #57068c, #a855f7);
+}
+
+[x-cloak] {
+  display: none !important;
+}

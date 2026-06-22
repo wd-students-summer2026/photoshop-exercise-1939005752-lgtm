@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs"></script>
+  <link rel="stylesheet" href="css/custom.css">
+  <title>Ziqing Zhong | Professional Site</title>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+    <nav x-data="{ open: false }" class="sticky top-0 z-50 border-b border-purple-100 bg-white/90 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+        <div class="flex items-center gap-3">
+          <a href="index.html" class="rounded-2xl border border-purple-200 bg-white px-4 py-2 text-sm font-bold text-[#57068c] transition hover:bg-purple-50">
+            ← Main Site
+          </a>
+          <a href="professional_site.html" class="brand-gradient rounded-2xl px-4 py-2 text-lg font-bold text-white soft-shadow">
+            Ziqing Zhong
+          </a>
+        </div>
+
+        <button
+          type="button"
+          class="md:hidden rounded-xl border border-purple-200 px-3 py-2 text-[#57068c]"
+          @click="open = !open"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+
+        <div
+          x-cloak
+          class="absolute left-4 right-4 top-20 rounded-2xl border border-purple-100 bg-white p-4 shadow-xl md:static md:flex md:items-center md:gap-2 md:border-0 md:bg-transparent md:p-0 md:shadow-none"
+          :class="open ? 'block' : 'hidden'"
+        >
+          <a class="block rounded-full px-4 py-2 text-sm font-semibold transition text-[#57068c] bg-purple-50" href="professional_site.html">Overview</a>
+          <a class="block rounded-full px-4 py-2 text-sm font-semibold transition text-gray-700 hover:text-[#57068c] hover:bg-purple-50" href="marketing.html">Marketing</a>
+          <a class="block rounded-full px-4 py-2 text-sm font-semibold transition text-gray-700 hover:text-[#57068c] hover:bg-purple-50" href="sports_business.html">Sports Business</a>
+        </div>
+      </div>
+    </nav>
+
+
+  <main class="mx-auto max-w-6xl px-4">
+    <section class="brand-gradient mt-10 overflow-hidden rounded-[32px] px-6 py-12 text-white soft-shadow md:px-12 md:py-16 lg:py-20">
+      <p class="text-sm font-semibold uppercase tracking-[0.28em] text-purple-100">Economics · Digital Marketing · Sports Business</p>
+      <h1 class="mt-5 max-w-4xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
+        Economics-driven digital marketing with a strong interest in basketball and consumer behavior.
+      </h1>
+      <p class="mt-6 max-w-3xl text-lg leading-8 text-purple-100 md:text-xl">
+        I connect market analysis, campaign operations, e-commerce data, and sports culture to understand how brands grow and how audiences respond.
+      </p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a class="rounded-full bg-white px-6 py-3 text-center font-bold text-[#57068c] transition hover:bg-purple-50" href="marketing.html">
+          View Marketing Work
+        </a>
+        <a class="rounded-full border border-white/50 px-6 py-3 text-center font-bold text-white transition hover:bg-white/10" href="sports_business.html">
+          Explore Sports Business
+        </a>
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <div class="section-divider"></div>
+      <h2 class="mt-5 text-3xl font-black text-slate-900">Professional Focus</h2>
+      <p class="mt-3 max-w-3xl text-slate-600">
+        My background combines economics study, global digital project support, campaign operations, and industry research.
+      </p>
+
+      <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <article class="rounded-[28px] border border-purple-100 bg-white p-6 soft-shadow">
+          <p class="text-[13px] font-bold uppercase tracking-[0.22em] text-[#57068c]">Foundation</p>
+          <h3 class="mt-3 text-2xl font-black">Economics</h3>
+          <p class="mt-3 text-slate-600">Trained to think through incentives, markets, data, and business performance with an analytical mindset.</p>
+        </article>
+        <article class="rounded-[28px] border border-purple-100 bg-white p-6 soft-shadow">
+          <p class="text-[13px] font-bold uppercase tracking-[0.22em] text-[#57068c]">Execution</p>
+          <h3 class="mt-3 text-2xl font-black">Digital Marketing</h3>
+          <p class="mt-3 text-slate-600">Experience supporting digital projects, e-commerce operations, CRM, campaign tracking, and reporting.</p>
+        </article>
+        <article class="rounded-[28px] border border-purple-100 bg-white p-6 soft-shadow">
+          <p class="text-[13px] font-bold uppercase tracking-[0.22em] text-[#57068c]">Interest</p>
+          <h3 class="mt-3 text-2xl font-black">Sports Business</h3>
+          <p class="mt-3 text-slate-600">A basketball-centered interest in fan engagement, athlete branding, sports marketing, and consumer communities.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <div class="rounded-[28px] bg-white p-7 shadow-sm">
+        <h2 class="text-2xl font-black">Selected Experience</h2>
+        <ul class="mt-5 space-y-4 text-slate-600">
+          <li><strong class="text-slate-900">Gucci Beauty Global:</strong> global digital projects, e-commerce data, CRM support, and internal reporting.</li>
+          <li><strong class="text-slate-900">Meituan:</strong> campaign operations, KPI execution, store data cleaning, SQL, BI, and performance tracking.</li>
+          <li><strong class="text-slate-900">Guotai Haitong Securities:</strong> industry research, valuation frameworks, semiconductor market analysis, and reports.</li>
+        </ul>
+      </div>
+      <div class="rounded-[28px] bg-[#111827] p-7 text-white">
+        <h2 class="text-2xl font-black">Tools & Strengths</h2>
+        <div class="mt-5 flex flex-wrap gap-3">
+          <span class="rounded-full bg-white/10 px-4 py-2 text-sm">Excel</span>
+          <span class="rounded-full bg-white/10 px-4 py-2 text-sm">SQL</span>
+          <span class="rounded-full bg-white/10 px-4 py-2 text-sm">Power BI</span>
+          <span class="rounded-full bg-white/10 px-4 py-2 text-sm">PowerPoint</span>
+          <span class="rounded-full bg-white/10 px-4 py-2 text-sm">Python</span>
+          <span class="rounded-full bg-white/10 px-4 py-2 text-sm">Campaign Analysis</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-16 border-t border-purple-100 bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-slate-500">
+      <p class="font-semibold text-slate-700">Ziqing Zhong · Economics, Digital Marketing & Sports Business</p>
+      <p class="mt-2">Built with Tailwind CSS and Alpine.js for Introduction to Web Design.</p>
+    </div>
+  </footer>
+</body>
+</html>

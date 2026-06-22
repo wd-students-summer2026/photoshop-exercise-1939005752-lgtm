@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Raster Image Exercise | Ziqing Zhong</title>
+  <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+  <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+  <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
+  <meta name="viewport" content="initial-scale=1">
+  <style>
+    .raster-project {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+
+    .raster-hero {
+      padding: 2.25rem;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #0b1f31, #184a54 52%, #5b287e);
+      color: #ffffff;
+      box-shadow: 0 14px 36px rgba(11, 31, 49, 0.22);
+    }
+
+    .raster-hero h1 {
+      margin: 0;
+      color: #ffffff;
+    }
+
+    .raster-hero p {
+      margin: 0.8rem 0 0;
+      max-width: 720px;
+      line-height: 1.7;
+      color: #ecf8fb;
+    }
+
+    .artwork-frame {
+      margin-top: 2rem;
+      padding: 1rem;
+      border-radius: 18px;
+      background: #ffffff;
+      box-shadow: 0 14px 36px rgba(11, 31, 49, 0.12);
+    }
+
+    .artwork-frame img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 11px;
+    }
+
+    .project-details {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    .detail-card {
+      padding: 1.4rem;
+      border-radius: 16px;
+      background: #ffffff;
+      box-shadow: 0 8px 22px rgba(11, 31, 49, 0.08);
+    }
+
+    .detail-card h2 {
+      margin-top: 0;
+      color: #18324a;
+    }
+
+    .detail-card p,
+    .detail-card li {
+      line-height: 1.65;
+    }
+
+    @media (max-width: 700px) {
+      .raster-hero {
+        padding: 1.5rem;
+      }
+
+      .project-details {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <a class="site-name" href="index.html">Ziqing Zhong</a>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_me.html">About Me</a></li>
+          <li><a href="more_about_me.html">Experiences</a></li>
+          <li><a href="topic_of_interest.html">JQuery Assignment</a></li>
+          <li><a href="user_experience_design.html">UX Design</a></li>
+          <li><a href="professional_site.html">Professional Site</a></li>
+          <li><a class="active" href="photoshop.html">Raster Image</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="raster-project">
+      <section class="raster-hero">
+        <p class="eyebrow">Raster Image Exercise</p>
+        <h1>Dream Traveler</h1>
+        <p>
+          This surreal travel composition combines personal travel photography
+          with a northern-lights sky, hot-air balloons, atmospheric lighting,
+          and layered color adjustments. The goal was to create an imaginative
+          but visually cohesive world.
+        </p>
+      </section>
+
+      <section class="artwork-frame" aria-label="Final raster image composition">
+        <img src="images/photoshop_final.jpg"
+             alt="Ziqing Zhong in a surreal travel world with northern lights, ocean scenery, and hot-air balloons">
+      </section>
+
+      <section class="project-details">
+        <article class="detail-card">
+          <h2>Concept</h2>
+          <p>
+            <strong>Ziqing Zhong | Dream Traveler</strong> imagines a travel
+            world where a tropical coast, aurora lights, and hot-air balloons
+            can exist together in one cinematic landscape.
+          </p>
+        </article>
+
+        <article class="detail-card">
+          <h2>Editing Process</h2>
+          <ul>
+            <li>Combined travel photography into a new fictional setting.</li>
+            <li>Used separate layers for the subject, sky, balloons, shadow, color, and text.</li>
+            <li>Used layer masks to preserve original image data while blending edges.</li>
+            <li>Adjusted lighting and color to create a unified dreamlike mood.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="index.html">Home</a>
+        |
+        <a href="about_me.html">About Me</a>
+        |
+        <a href="more_about_me.html">Experiences</a>
+        |
+        <a href="topic_of_interest.html">JQuery Assignment</a>
+        |
+        <a href="user_experience_design.html">UX Design</a>
+        |
+        <a href="professional_site.html">Professional Site</a>
+        |
+        <a href="photoshop.html">Raster Image</a>
+        |
+        <a href="contact.html">Contact Me</a>
+      </p>
+      <p>&copy; 2026 Ziqing Zhong | Introduction to Web Design</p>
+    </footer>
+  </div>
+</body>
+</html>
